@@ -30,7 +30,7 @@ app.use("/colyseus", basicAuthMiddleware, monitor())
 gameServer.listen(port)
 
 
-app.get('/status', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Krystal Studio (c) Ultimate Tic Tac Toe GameServer v0.0.15 is running up !!!')
   })
   
