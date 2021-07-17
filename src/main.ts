@@ -2,9 +2,9 @@ import { Server } from "colyseus"
 import http from "http"
 import express from "express"
 import { monitor } from "@colyseus/monitor"
-import basicAuth from "express-basic-auth";
+import basicAuth from "express-basic-auth"
 
-const port = Number(process.env.port) || 3000;
+const port = Number(process.env.PORT) || 5000
 
 import TicTacToe from "./rooms/TicTacToe"
 
