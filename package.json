@@ -3,9 +3,11 @@
 	"version": "1.0.0",
 	"description": "Multiplayer Server for Ultimate Tic Tac Toe game with Colyseus",
 	"scripts": {
-		"start": "ts-node --transpile-only src/main.ts",
+		"start": "node dist/main.js",
 		"dev": "ts-node-dev --respawn --transpile-only src/main.ts",
-		"arena": "ts-node-dev --inspect --respawn --transpile-only src/main.ts",
+		"arena-dev": "ts-node-dev --inspect --respawn --transpile-only src/arena.ts",
+		"arena": "node src/arena.js",
+		"build": "tsc",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "Edgar Quex",
