@@ -1,0 +1,58 @@
+{
+	"name": "ultimate-tic-tac-toe-colyseus-server",
+	"version": "1.0.0",
+	"description": "Multiplayer Server for Ultimate Tic Tac Toe game with Colyseus",
+	"scripts": {
+		"start": "ts-node --transpile-only src/main.ts",
+		"dev": "ts-node-dev --respawn --transpile-only src/main.ts",
+		"arena": "ts-node-dev --inspect --respawn --transpile-only src/main.ts",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Edgar Quex",
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/eaquex/phaser-mp-tictactoe"
+	},
+	"devDependencies": {
+		"@colyseus/loadtest": "^0.14.3",
+		"@types/cors": "^2.8.6",
+		"@types/express": "^4.17.1",
+		"@typescript-eslint/eslint-plugin": "^2.29.0",
+		"@typescript-eslint/parser": "^2.29.0",
+		"copyfiles": "^2.4.1",
+		"cssnano": "^4.1.10",
+		"dotenv": "^10.0.0",
+		"eslint": "^6.8.0",
+		"minimist": ">=1.2.2",
+		"parcel-plugin-clean-easy": "^1.0.2",
+		"parcel-plugin-static-files-copy": "^2.4.3",
+		"rimraf": "^2.7.1",
+		"ts-node": "^8.1.0",
+		"ts-node-dev": "^1.0.0-pre.63",
+		"typescript": "^3.8.3"
+	},
+	"dependencies": {
+		"@colyseus/arena": "^0.14.9",
+		"@colyseus/command": "^0.1.7",
+		"@colyseus/monitor": "^0.14.0",
+		"@colyseus/social": "^0.10.9",
+		"colyseus": "^0.14.0",
+		"colyseus.js": "^0.14.12",
+		"cors": "^2.8.5",
+		"express": "^4.16.4",
+		"express-basic-auth": "^1.2.0",
+		"regenerator-runtime": "^0.13.7",
+		"short-uuid": "^4.2.0"
+	},
+	"parcelCleanPaths": [
+		"dist"
+	],
+	"staticFiles": {
+		"staticPath": "public",
+		"watcherGlob": "**"
+	},
+	"browserslist": [
+		"last 1 Chrome version"
+	]
+}

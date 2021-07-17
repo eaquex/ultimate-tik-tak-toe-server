@@ -1,0 +1,104 @@
+{
+	"textures": [
+		{
+			"image": "loader.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 687,
+				"h": 478
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "game-logo",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 613,
+						"h": 265
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 2,
+						"w": 613,
+						"h": 263
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 613,
+						"h": 263
+					}
+				},
+				{
+					"filename": "company-logo",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 520,
+						"h": 156
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 2,
+						"w": 503,
+						"h": 153
+					},
+					"frame": {
+						"x": 1,
+						"y": 266,
+						"w": 503,
+						"h": 153
+					}
+				},
+				{
+					"filename": "loader-area",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 448,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 448,
+						"h": 56
+					},
+					"frame": {
+						"x": 1,
+						"y": 421,
+						"w": 448,
+						"h": 56
+					}
+				},
+				{
+					"filename": "square-tile",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 180,
+						"h": 180
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 180,
+						"h": 180
+					},
+					"frame": {
+						"x": 506,
+						"y": 266,
+						"w": 180,
+						"h": 180
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:2b1b5a0cf5e1feb0b1d50fe8546ac948:e67e744b7f1215731d75da4b1a18cb97:f738fe997bb2212a06178648a8058842$"
+	}
+}
