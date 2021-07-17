@@ -4,7 +4,7 @@ import express from "express"
 import { monitor } from "@colyseus/monitor"
 import basicAuth from "express-basic-auth"
 
-const port = Number(process.env.PORT) || 5000
+const port = Number(process.env.PORT) || 3000
 
 import TicTacToe from "./rooms/TicTacToe"
 
