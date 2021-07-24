@@ -2,9 +2,10 @@ import { Client, Room } from 'colyseus'
 import { Dispatcher } from '@colyseus/command'
 import { Message } from '../types/Messages'
 import TicTacToeSchema from './schema/TicTacToeState'
-import PlayerSelectionCommand from '../commands/PlayerSelectionCommand'
 import { GameState } from '../types/ITicTacToeState'
+import PlayerSelectionCommand from '../commands/PlayerSelectionCommand'
 import CheckWinnerCommand from '../commands/CheckWinnerCommand'
+import CheckSectorCommand from '../commands/CheckSectorCommand'
 
 export default class TicTacToe extends Room<TicTacToeSchema>
 {
@@ -21,9 +22,12 @@ export default class TicTacToe extends Room<TicTacToeSchema>
                 index: message.index
             })
 
-            this.dispacher.dispatch(new CheckWinnerCommand(), {
+            this.dispacher.dispatch(new CheckSectorCommand(), {
+                client: client,
                 index: message.index
-            })            
+            })              
+
+            this.dispacher.dispatch(new CheckWinnerCommand())            
         })
     }
 
