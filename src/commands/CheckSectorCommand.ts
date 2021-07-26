@@ -131,14 +131,14 @@ export default class CheckSectorCommand extends Command<ITicTacToeState, Payload
 
         const sector = getSector(data.index)
         const isTaken = this.determineSectorWin(data.index)
-        const next = getNextSector(this.state.sector, index)
-        
-        this.state.currentSector = next
-
+                
         if (isTaken)
         {
             // Save taken value
             this.state.sector[sector] = cellValue            
         }
+        
+        const next = getNextSector(this.state.sector, index)
+        this.state.currentSector = next
     }
 }
