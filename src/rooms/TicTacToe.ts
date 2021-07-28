@@ -6,6 +6,7 @@ import { GameState } from '../types/ITicTacToeState'
 import PlayerSelectionCommand from '../commands/PlayerSelectionCommand'
 import CheckWinnerCommand from '../commands/CheckWinnerCommand'
 import CheckSectorCommand from '../commands/CheckSectorCommand'
+import NextTurnCommand from '../commands/NextTurnCommand'
 
 export default class TicTacToe extends Room<TicTacToeSchema>
 {
@@ -27,7 +28,9 @@ export default class TicTacToe extends Room<TicTacToeSchema>
                 index: message.index
             })              
 
-            this.dispacher.dispatch(new CheckWinnerCommand())            
+            this.dispacher.dispatch(new CheckWinnerCommand()) 
+            
+            this.dispacher.dispatch(new NextTurnCommand())                     
         })
     }
 

@@ -1,7 +1,6 @@
 import { Command } from '@colyseus/command'
 import { Client } from 'colyseus'
 import { ITicTacToeState, Cell } from '../types/ITicTacToeState'
-import NextTurnCommand from './NextTurnCommand'
 
 const getValueAt = (board: number[], row: number, col: number) => {
     const idx = (row * 3) + col
@@ -60,13 +59,8 @@ export default class CheckWinnerCommand extends Command<ITicTacToeState>
 
         if (win)
         {
+            console.log(`server: player with index ${this.state.activePlayer} won`)
             this.state.winningPlayer = this.state.activePlayer          
-        }
-        else
-        {
-            return [
-                new NextTurnCommand()
-            ]
         }
     }
 }
